@@ -1,0 +1,57 @@
+group 'com.quwan.core.plugin.ttchat_flowball'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        maven {
+            url "http://192.168.8.184:8081/repository/all-proxy/"
+        }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        maven {
+            url "http://192.168.8.184:8081/repository/all-proxy/"
+        }
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 29
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 19
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.core:core:1.3.2'
+    implementation 'com.quwan.tt.core:log-android:1.0.1-beta03'
+    implementation 'com.quwan.tt.core:tt-core-android:1.0.2'
+}
