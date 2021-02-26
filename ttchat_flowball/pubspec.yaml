@@ -11,9 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  loggerplugin:
-    git:
-      url: "git@gitlab.ttyuyin.com:azeroth/app/logger_plugin.git"
   shared_preferences: ^0.5.7+3
 
 dev_dependencies:

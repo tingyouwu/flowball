@@ -2,10 +2,7 @@
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
       <root url="file://$PROJECT_DIR$" />
-      <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider-1.6.27" />
-      <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_macos-0.0.4+8" />
       <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_linux-0.0.1+2" />
-      <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/git/logger_plugin-2bc58a6d067266a77d7b587939482b2a27b95d13" />
       <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider_windows-0.0.4+3" />
       <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences_windows-0.0.2+3" />
       <root url="file://C:/src/flutter/flutter_windows_1.22.3-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.5.12+4" />
